@@ -1,0 +1,10 @@
+Load class
+==========
+
+Load class creates load objects.
+
+Load
+----
+
+.. automodule:: composipy.load_class
+  :members:

@@ -1,0 +1,12 @@
+Laminate class
+==============
+
+Laminate class creates a laminate object.
+
+
+Laminate
+--------
+
+.. automodule:: composipy.laminate_class
+  :members:
+  

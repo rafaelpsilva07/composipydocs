@@ -1,0 +1,10 @@
+Ply class
+=========
+
+Ply class creates a ply objects.
+
+Ply
+---
+
+.. automodule:: composipy.ply_class
+  :members:
