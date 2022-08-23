@@ -57,9 +57,11 @@
   <div id="navbar-start">
     
     
+
 <a class="navbar-brand" href="../index.html">
-<p class="title">composipy</p>
+  <img src="../_static/composipy_logo.svg" class="logo" alt="logo">
 </a>
+
 
     
   </div>
@@ -77,12 +79,6 @@
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../userGuide/getting_start.html">
   User Guide
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../reference/index.html">
-  Code References
  </a>
 </li>
 
@@ -145,6 +141,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Strength_Analysis.html">
    Composipy for strength analysis of a laminate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Pcomp_generation_from_article.html">
+   Introduction
   </a>
  </li>
 </ul>
@@ -442,7 +443,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from composipy import Ply
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">composipy</span> <span class="kn">import</span> <span class="n">Ply</span>
 </pre></div>
 </div>
 </div>
@@ -450,13 +451,13 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>E1 = 39000
-E2 = 8300
-G12 = 4000
-v12 = 0.26
-T = 1.0
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E1</span> <span class="o">=</span> <span class="mi">39000</span>
+<span class="n">E2</span> <span class="o">=</span> <span class="mi">8300</span>
+<span class="n">G12</span> <span class="o">=</span> <span class="mi">4000</span>
+<span class="n">v12</span> <span class="o">=</span> <span class="mf">0.26</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">1.0</span>
 
-ply = Ply (E1, E2, v12, G12, T)
+<span class="n">ply</span> <span class="o">=</span> <span class="n">Ply</span> <span class="p">(</span><span class="n">E1</span><span class="p">,</span> <span class="n">E2</span><span class="p">,</span> <span class="n">v12</span><span class="p">,</span> <span class="n">G12</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -464,7 +465,7 @@ ply = Ply (E1, E2, v12, G12, T)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ply.Q_0
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ply</span><span class="o">.</span><span class="n">Q_0</span>
 </pre></div>
 </div>
 </div>

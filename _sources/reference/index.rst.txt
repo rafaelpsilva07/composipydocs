@@ -1,14 +1,12 @@
-Welcome to composipy's code documentation!
-=======================================
-
-Composipy is structured is objecte oriented.
-See the available objects below. 
+Code references
+===============
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
-
-   classes/Laminate
-   classes/Ply
-   classes/Load
-   classes/Strength
+	
+   Laminate <Laminate>
+   Ply <Ply>
+   Load <Load>
+   Strength <Strength>
+   Nastran API <NastranAPI>

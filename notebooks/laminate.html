@@ -57,9 +57,11 @@
   <div id="navbar-start">
     
     
+
 <a class="navbar-brand" href="../index.html">
-<p class="title">composipy</p>
+  <img src="../_static/composipy_logo.svg" class="logo" alt="logo">
 </a>
+
 
     
   </div>
@@ -77,12 +79,6 @@
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../userGuide/getting_start.html">
   User Guide
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../reference/index.html">
-  Code References
  </a>
 </li>
 
@@ -145,6 +141,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Strength_Analysis.html">
    Composipy for strength analysis of a laminate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Pcomp_generation_from_article.html">
+   Introduction
   </a>
  </li>
 </ul>
@@ -442,7 +443,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from composipy import Ply, Laminate
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">composipy</span> <span class="kn">import</span> <span class="n">Ply</span><span class="p">,</span> <span class="n">Laminate</span>
 </pre></div>
 </div>
 </div>
@@ -450,13 +451,13 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>E1 = 54870
-E2 = 18320
-G12 = 8900
-v12 = 0.25
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E1</span> <span class="o">=</span> <span class="mi">54870</span>
+<span class="n">E2</span> <span class="o">=</span> <span class="mi">18320</span>
+<span class="n">G12</span> <span class="o">=</span> <span class="mi">8900</span>
+<span class="n">v12</span> <span class="o">=</span> <span class="mf">0.25</span>
 
-ply1 = Ply (E1, E2, v12, G12, 3.0)
-ply2 = Ply (E1, E2, v12, G12, 6.0)
+<span class="n">ply1</span> <span class="o">=</span> <span class="n">Ply</span> <span class="p">(</span><span class="n">E1</span><span class="p">,</span> <span class="n">E2</span><span class="p">,</span> <span class="n">v12</span><span class="p">,</span> <span class="n">G12</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="n">ply2</span> <span class="o">=</span> <span class="n">Ply</span> <span class="p">(</span><span class="n">E1</span><span class="p">,</span> <span class="n">E2</span><span class="p">,</span> <span class="n">v12</span><span class="p">,</span> <span class="n">G12</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -464,12 +465,12 @@ ply2 = Ply (E1, E2, v12, G12, 6.0)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>layup = [(45, ply1),
-         (0, ply2),
-         (45, ply1)]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">layup</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">45</span><span class="p">,</span> <span class="n">ply1</span><span class="p">),</span>
+         <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ply2</span><span class="p">),</span>
+         <span class="p">(</span><span class="mi">45</span><span class="p">,</span> <span class="n">ply1</span><span class="p">)]</span>
 
-laminate = Laminate(layup)
-laminate.show_ABD()
+<span class="n">laminate</span> <span class="o">=</span> <span class="n">Laminate</span><span class="p">(</span><span class="n">layup</span><span class="p">)</span>
+<span class="n">laminate</span><span class="o">.</span><span class="n">show_ABD</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -496,7 +497,7 @@ laminate.show_ABD()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>laminate
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">laminate</span>
 </pre></div>
 </div>
 </div>
